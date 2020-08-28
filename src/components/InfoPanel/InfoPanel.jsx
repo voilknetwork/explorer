@@ -7,7 +7,7 @@ import InfoItem from "./InfoItem";
 const query = gql`
   {
     global_dynamic_properties {
-      virtual_supply
+      current_supply
       current_vsd_supply
       total_reward_fund_voilk
       vote_power_reserve_rate
@@ -23,7 +23,7 @@ class InfoPanel extends Component {
         icon_color: "icon icon-primary",
         icon: "now-ui-icons business_money-coins",
         value: "VOILK Supply",
-        fname: data.global_dynamic_properties.virtual_supply
+        fname: data.global_dynamic_properties.current_supply
       };
       const item2 = {
         icon_color: "icon icon-success",
