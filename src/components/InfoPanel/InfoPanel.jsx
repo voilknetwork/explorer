@@ -11,6 +11,9 @@ const query = gql`
       current_vsd_supply
       total_reward_fund_voilk
       vote_power_reserve_rate
+      post_reward_fund {
+        reward_balance
+      }
     }
   }
 `;
@@ -35,7 +38,7 @@ class InfoPanel extends Component {
         icon_color: "icon icon-warning",
         icon: "now-ui-icons shopping_bag-16",
         value: "Reward Fund",
-        fname: data.global_dynamic_properties.total_reward_fund_voilk
+        fname: data.global_dynamic_properties.post_reward_fund.reward_balance
       };
       const item4 = {
         icon_color: "icon icon-primary",
