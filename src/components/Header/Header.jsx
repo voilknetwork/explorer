@@ -151,7 +151,7 @@ class Header extends React.Component {
               </NavItem>
               <NavItem>
                 <a
-                  href="https://goo.gl/forms/3e2DeMNVDwm8YALE2"
+                  href="https://signup.voilk.com/register"
                   className="nav-link"
                   target="_blank"
                   rel="noopener noreferrer"
