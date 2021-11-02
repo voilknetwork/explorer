@@ -9,10 +9,7 @@ class PriceComponent extends Component {
       <Query
         query={gql`
           {
-            median_price {
-              base
-              quote
-            }
+            get_current_value
           }
         `}
       >
@@ -35,10 +32,7 @@ class PriceComponent extends Component {
               info={{
                 icon_color: "icon icon-success",
                 icon: "now-ui-icons business_money-coins",
-                value:
-                  parseFloat(data.median_price.base) /
-                  parseFloat(data.median_price.quote) /
-                  10,
+                value: data.get_current_value,
                 symbol: "$",
                 fname: "Price Per Unit"
               }}
