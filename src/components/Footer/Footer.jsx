@@ -16,7 +16,7 @@ class Footer extends React.Component {
                 <a href="https://www.voilk.com">Voilk</a>
               </li>
               <li>
-                <a href="https://goo.gl/forms/cnsbnfbugb8XKukr2">Signup</a>
+                <a href="https://signup.voilk.com/register">Signup</a>
               </li>
               <li>
                 <a href="https://voilk.com/login.html">Login</a>
